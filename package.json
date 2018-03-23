@@ -1,6 +1,6 @@
 {
   "name": "docker_web_app",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js on Docker",
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
   "main": "server.js",

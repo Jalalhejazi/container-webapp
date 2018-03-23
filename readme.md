@@ -59,3 +59,9 @@ npm run docker:deploy
 ```
 
 
+## Azure Container create
+
+```
+az container create -g "container"--name "container-web-app" --image "jalalhejazi/node-web-app:latest" --ip-address "public"
+
+``` 

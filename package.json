@@ -1,0 +1,19 @@
+{
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node server.js",
+    "predocker": "docker build -t jalalhejazi/node-web-app .",
+    "docker": "docker run -p 1234:8080 -d jalalhejazi/node-web-app",
+    "postdocker": "docker ps",
+    "docker:deploy": "docker push jalalhejazi/node-web-app:latest",
+    "git:deploy": "git add . && git commit -m 'docker_web_app' && git push origin master && npm repo . "
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}

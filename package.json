@@ -1,6 +1,6 @@
 {
   "name": "docker_web_app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js on Docker",
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
   "main": "server.js",
@@ -10,11 +10,9 @@
     "predocker": "docker build -t jalalhejazi/node-web-app .",
     "docker": "docker run -p 1234:8080 -d jalalhejazi/node-web-app",
     "postdocker": "docker ps",
-    "kill" : "echo 'docker container kill 'containerID'' ",
-
+    "kill": "echo 'docker container kill 'containerID'' ",
     "docker:deploy": "npm run docker && docker push jalalhejazi/node-web-app:latest",
     "git:deploy": "git add . && git commit -m 'docker_web_app' && npm version patch  && git push origin master --follow-tags && npm repo . "
-    
   },
   "dependencies": {
     "express": "^4.16.1"

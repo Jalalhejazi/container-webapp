@@ -15,5 +15,11 @@
   },
   "dependencies": {
     "express": "^4.16.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.itacademy.dk/jalal/container-webapp.git"
+  },
+  "keywords": [],
+  "license": "ISC"
 }

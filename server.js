@@ -1,6 +1,6 @@
 
 const express = require('express');
-const config = require('package.json');
+const config = require('./package.json');
 
 // Constants
 const PORT = 8080;

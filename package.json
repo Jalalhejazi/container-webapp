@@ -1,8 +1,18 @@
 {
   "name": "docker_web_app",
   "version": "1.0.4",
-  "description": "Node.js on Docker",
-  "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
+  "description": "Integration between ['git-repository', 'azure app services' , 'docker images' , 'CI/CD' automation ]",
+  "info": {
+    "container_as_service": [
+      "Applications have no system dependencies",
+      "Updates can be pushed to any part of a distributed application",
+      "Resource density can be optimized",
+      "Scaling your application is a matter of spinning up new executables, not running heavy VM hosts",
+      "Integrate to CI/CD and other automation systems",
+      "Modern Microservices architecture"
+    ]
+  },
+  "author": "Jalal Hejazi <jalal.hejazi@iCloud.com> Cloud Architect ",
   "main": "server.js",
   "scripts": {
     "prestart": "npm install",
@@ -10,7 +20,7 @@
     "predocker": "docker build -t jalalhejazi/node-web-app .",
     "docker": "docker run -p 1234:8080 -d jalalhejazi/node-web-app",
     "postdocker": "docker ps",
-    "kill": "echo 'docker container kill 'containerID'' ",
+    "docker:rm": "docker container rm $(docker container ls -aq) -f",
     "docker:deploy": "npm run docker && docker push jalalhejazi/node-web-app:latest",
     "git:deploy": "git add . && git commit -m 'docker_web_app' && npm version patch  && git push origin master --follow-tags && npm repo . "
   },

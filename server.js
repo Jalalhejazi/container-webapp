@@ -5,7 +5,6 @@ const config = require('./package.json');
 // Constants
 const PORT = 8080;
 const HOST = '0.0.0.0';
-const VERSION = config.version; 
 
 // App
 const app = express();
@@ -13,15 +12,16 @@ const app = express();
 app.get('/', (req, res) => {
 
  let data = {
- 	name : "Jalal Hejazi",
- 	title: "fullstack dev",
- 	version: VERSION,
- 	about : "Continues integration between docker-image and azure Web App"
+ 	name 		: config.author,
+ 	description : config.description,
+ 	version		: config.version,
+ 	git 		: config.repository.url,
+ 	flow 		: config.scripts,
+ 	benefits    : config.info
+ 	
  }
 
- res.json(data);
- 
-
+ 	res.json(data);	
 });
 
 app.listen(PORT, HOST);

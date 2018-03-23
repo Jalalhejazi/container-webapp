@@ -11,7 +11,9 @@
     "docker": "docker run -p 1234:8080 -d jalalhejazi/node-web-app",
     "postdocker": "docker ps",
     "docker:deploy": "docker push jalalhejazi/node-web-app:latest",
-    "git:deploy": "git add . && git commit -m 'docker_web_app' && git push origin master && npm repo . "
+    "git:deploy": "git add . && git commit -m 'docker_web_app' && npm version patch  && git push origin master --follow-tags && npm repo . ",
+    "build-push": "npm run docker && npm run docker:deploy"
+
   },
   "dependencies": {
     "express": "^4.16.1"

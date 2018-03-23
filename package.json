@@ -12,7 +12,7 @@
       "Modern Microservices architecture"
     ]
   },
-  "author": "Jalal Hejazi <jalal.hejazi@iCloud.com> Cloud Architect ",
+  "author": "Jalal Hejazi <jalal.hejazi@iCloud.com>",
   "main": "server.js",
   "scripts": {
     "prestart": "npm install",
@@ -27,10 +27,11 @@
   "dependencies": {
     "express": "^4.16.1"
   },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://git.itacademy.dk/jalal/container-webapp.git"
-  },
-  "keywords": [],
-  "license": "ISC"
+    "url": "https://git.itacademy.dk/cloud/container-webapp.git"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "docker_web_app",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Integration between ['git-repository', 'azure app services' , 'docker images' , 'CI/CD' automation ]",
   "info": {
     "container_as_service": [

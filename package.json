@@ -20,7 +20,11 @@
     "predocker": "docker build -t jalalhejazi/node-web-app .",
     "docker": "docker run -p 1234:8080 -d jalalhejazi/node-web-app",
     "postdocker": "docker ps",
-    "docker:rm": "docker container rm $(docker container ls -aq) -f",
+    "docker:bash":"docker run -it jalalhejazi/node-web-app bash",
+    "docker:node":"docker run -it jalalhejazi/node-web-app node",
+    "node-version":"docker run -it jalalhejazi/node-web-app node -e 'console.log( process.env.NODE_VERSION )'",
+    "docker:rm1": "docker container rm $(docker container ls -aq) -f",
+    "docker:rm2": "docker image rm $(docker image ls -aq) -f",
     "docker:deploy": "npm run docker && docker push jalalhejazi/node-web-app:latest",
     "git:deploy": "git add . && git commit -m 'docker_web_app' && npm version patch  && git push origin master --follow-tags && npm repo . "
   },

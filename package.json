@@ -1,6 +1,6 @@
 {
   "name": "docker_web_app",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Integration between ['git-repository', 'azure app services' , 'docker images' , 'CI/CD' automation ]",
   "info": {
     "container_as_service": [
@@ -20,9 +20,9 @@
     "predocker": "docker build -t jalalhejazi/node-web-app .",
     "docker": "docker run -p 1234:8080 -d jalalhejazi/node-web-app",
     "postdocker": "docker ps",
-    "docker:bash":"docker run -it jalalhejazi/node-web-app bash",
-    "docker:node":"docker run -it jalalhejazi/node-web-app node",
-    "node-version":"docker run -it jalalhejazi/node-web-app node -e 'console.log( process.env.NODE_VERSION )'",
+    "docker:bash": "docker run -it jalalhejazi/node-web-app bash",
+    "docker:node": "docker run -it jalalhejazi/node-web-app node",
+    "node-version": "docker run -it jalalhejazi/node-web-app node -e 'console.log( process.env.NODE_VERSION )'",
     "docker:rm1": "docker container rm $(docker container ls -aq) -f",
     "docker:rm2": "docker image rm $(docker image ls -aq) -f",
     "docker:deploy": "npm run docker && docker push jalalhejazi/node-web-app:latest",

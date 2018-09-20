@@ -37,35 +37,3 @@ docker run -d -p 1234:8080 jalalhejazi/node-web-app:node
 curl http://localhost:1234
 
 ```
- 
- 
-
-## Azure Web App for containers CI
-
-
-1. Enabled Continues Integration in Azure
-    * https://container-web-app.azurewebsites.net/
-
-2. Config web hook in hub.docker.com
-    * https://hub.docker.com/r/jalalhejazi/node-web-app/~/settings/webhooks/
-
-
-
-## npm run docker
-
-```
-npm run docker
-npm run docker:deploy
-```
-
-
-## Azure Container create
-
-```
-
-az container create -g "containers"  --name "container-web-app-2"  --image "jalalhejazi/node-web-app:node"   --ip-address "public"
-
-az container create -g "containers"  --name "container-web-app-2"  --image "jalalhejazi/node-web-app:latest" --ip-address "public"
-
-
-``` 

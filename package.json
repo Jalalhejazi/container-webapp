@@ -1,6 +1,6 @@
 {
   "name": "container_webapp",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Integration between ['github-repository', 'docker-hub' , 'Azure' , 'CI/CD' automation ]",
   "info": {
     "container_as_service": [

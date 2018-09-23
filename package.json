@@ -1,7 +1,7 @@
 {
-  "name": "docker_web_app",
+  "name": "container_webapp",
   "version": "1.0.8",
-  "description": "Integration between ['git-repository', 'azure app services' , 'docker images' , 'CI/CD' automation ]",
+  "description": "Integration between ['github-repository', 'docker-hub' , 'Azure' , 'CI/CD' automation ]",
   "info": {
     "container_as_service": [
       "Applications have no system dependencies",
@@ -12,21 +12,21 @@
       "Modern Microservices architecture"
     ]
   },
-  "author": "Jalal Hejazi <jalal.hejazi@iCloud.com>",
+  "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
   "main": "server.js",
   "scripts": {
     "prestart": "npm install",
     "start": "node server.js",
-    "predocker": "docker build -t jalalhejazi/node-web-app .",
-    "docker": "docker run -p 1234:8080 -d jalalhejazi/node-web-app",
+    "predocker": "docker build -t jalalhejazi/container-webapp .",
+    "docker": "docker run -p 1234:8080 -d jalalhejazi/container-webapp",
     "postdocker": "docker ps",
-    "docker:bash": "docker run -it jalalhejazi/node-web-app bash",
-    "docker:node": "docker run -it jalalhejazi/node-web-app node",
-    "node-version": "docker run -it jalalhejazi/node-web-app node -e 'console.log( process.env.NODE_VERSION )'",
+    "docker:bash": "docker run -it jalalhejazi/container-webapp bash",
+    "docker:node": "docker run -it jalalhejazi/container-webapp node",
+    "node-version": "docker run -it jalalhejazi/container-webapp node -e 'console.log( process.env.NODE_VERSION )'",
     "docker:rm1": "docker container rm $(docker container ls -aq) -f",
     "docker:rm2": "docker image rm $(docker image ls -aq) -f",
-    "docker:deploy": "npm run docker && docker push jalalhejazi/node-web-app:latest",
-    "git:deploy": "git add . && git commit -m 'docker_web_app' && npm version patch  && git push origin master --follow-tags && npm repo . "
+    "docker:deploy": "npm run docker && docker push jalalhejazi/container-webapp:latest",
+    "deploy": "git add . && git commit -m 'docker_web_app' && npm version patch  && git push origin master --follow-tags && npm repo . "
   },
   "dependencies": {
     "express": "^4.16.1"
@@ -36,6 +36,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://git.itacademy.dk/cloud/container-webapp.git"
-  }
+    "url": "git+https://github.com/Jalalhejazi/container-webapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jalalhejazi/container-webapp/issues"
+  },
+  "homepage": "https://github.com/Jalalhejazi/container-webapp#readme"
 }

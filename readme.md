@@ -1,40 +1,23 @@
-## guide
-
-https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+## Automated-build between gitHub, dockerHub and Azure
 
 
-## github CI/CD
+## CI/CD with "npm run deploy"
 
 ```
-git push origin master
+One command triggers github code update 
+-> then, hub.docker.com (auto build new docker image) 
+-> then, Azure deployment using webhooks
+-> then, notification 
 
-```
-
-
-
-## docker build 
-
-```
-docker build -t jalalhejazi/container-webapp .
+npm run deploy
 
 ```
 
 
-## docker push repo 
+## docker run container-webapp 
 
 ```
-docker push jalalhejazi/container-webapp
-
-```
-
-
-## docker pull repo 
-
-```
-
-docker run -d -p 1234:8080 jalalhejazi/container-webapp
+docker container run -d -p 1234:8080 jalalhejazi/container-webapp
 
 HTTP localhost:1234/
-
-
 ```

@@ -1,4 +1,4 @@
-## Automated-build between gitHub, dockerHub and Azure
+## Automated-build between git-Hub, docker-Hub and Azure (staging and production)
 
 <img   src="https://raw.githubusercontent.com/Jalalhejazi/container-webapp/master/public/ci-cd-workflow.png" alt="ci cd"/></img>
 
@@ -15,12 +15,12 @@ HTTP localhost:1234/
 ## 2. DevOps CI/CD 
 
 ```
-One command triggers github code update 
+npm run deploy
+
+-> from localhost -> to Github (branching)
 -> then, hub.docker.com (auto build new docker image) 
 -> then, Azure deployment using webhooks
 -> then, notification 
-
-npm run deploy
 
 ```
 

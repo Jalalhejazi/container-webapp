@@ -1,5 +1,7 @@
 ## Automated-build between gitHub, dockerHub and Azure
 
+<img   src="public/ci-cd-workflow.png" /></img>
+
 
 ## CI/CD with "npm run deploy"
 

@@ -23,3 +23,9 @@ docker container run -d -p 1234:8080 jalalhejazi/container-webapp
 
 HTTP localhost:1234/
 ```
+
+
+## Staging / Production 
+
+https://container-webapp.azurewebsites.net/
+

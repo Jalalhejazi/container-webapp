@@ -14,6 +14,8 @@ HTTP localhost:1234/
 
 ## 2. DevOps CI/CD 
 
+[What is CI/CD and DevOps means ?](https://opensource.com/article/18/8/what-cicd)
+
 ```
 npm run deploy
 

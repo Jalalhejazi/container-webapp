@@ -3,7 +3,16 @@
 <img   src="https://raw.githubusercontent.com/Jalalhejazi/container-webapp/master/public/ci-cd-workflow.png" alt="ci cd"/></img>
 
 
-## CI/CD with "npm run deploy"
+## 1. Development and Test
+
+```
+docker container run -d -p 1234:8080 jalalhejazi/container-webapp
+
+HTTP localhost:1234/
+```
+
+
+## 2. DevOps CI/CD 
 
 ```
 One command triggers github code update 
@@ -15,17 +24,6 @@ npm run deploy
 
 ```
 
-
-## docker run container-webapp 
-
-```
-docker container run -d -p 1234:8080 jalalhejazi/container-webapp
-
-HTTP localhost:1234/
-```
-
-
-## Staging / Production 
+## 3. Staging / Production 
 
 https://container-webapp.azurewebsites.net/
-

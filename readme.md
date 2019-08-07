@@ -1,3 +1,9 @@
+## DevOps Build Status
+
+[![Build Status](https://dev.azure.com/superusers-kursus/devops/_apis/build/status/working-ok/Docker-image-builld-to-dockerHub/devops-Docker%20container-CI?branchName=azure-pipelines)](https://dev.azure.com/superusers-kursus/devops/_build/latest?definitionId=13&branchName=azure-pipelines)
+
+
+
 ## Automated-build between git-Hub, docker-Hub and Azure (staging and production)
 
 <img   src="https://raw.githubusercontent.com/Jalalhejazi/container-webapp/master/public/ci-cd-workflow.png" alt="ci cd"/></img>
@@ -28,4 +34,4 @@ npm run deploy
 
 ## 3. Staging / Production 
 
-https://container-webapp.azurewebsites.net/
+https://devops-container-2019.azurewebsites.net/

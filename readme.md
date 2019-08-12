@@ -28,4 +28,11 @@ npm run deploy
 
 ## 3. Staging / Production 
 
-https://container-webapp.azurewebsites.net/
+- https://Myapp.Dev.azurewebsites.net/
+- https://Myapp.Test.azurewebsites.net/
+- https://Myapp.qa.azurewebsites.net/
+- https://Myapp.prod1.azurewebsites.net/
+- https://Myapp.prod2.azurewebsites.net/
+- https://Myapp.europe-west.azurewebsites.net/
+- https://Myapp.europe-north.azurewebsites.net/
+

@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: githubcontainerwebappwithnodejsdemo 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: githubcontainerwebappwithnodejsdemo 
+    spec:
+      containers:
+        - name: githubcontainerwebappwithnodejsdemo 
+          image: superusers2020.azurecr.io/githubcontainerwebappwithnodejsdemo
+          ports:
+          - containerPort: 8080

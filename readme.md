@@ -27,4 +27,4 @@ npm run deploy
 
 ## 3. Multi-Staging / Multi-Production 
 
-- [Azure Kubernetes Service (AKS) if online]()
+- [Any Cloud can run docker container]()

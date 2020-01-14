@@ -15,6 +15,8 @@ HTTP localhost:1234/
 
 ## 2. DevOps CI/CD 
 
+[![Build Status](https://dev.azure.com/superusers-kursus/devops/_apis/build/status/working-ok/container-webapp-on-github-to-dockerHub/container-webapp-on-github-to-dockerHub?branchName=azure-pipelines)](https://dev.azure.com/superusers-kursus/devops/_build/latest?definitionId=13&branchName=azure-pipelines)
+
 ```
 npm run deploy
 
@@ -27,4 +29,4 @@ npm run deploy
 
 ## 3. Multi-Staging / Multi-Production 
 
-- [Any cloud can run docker container](https://container-webapp.azurewebsites.net)
+- [https://container-webapp.azurewebsites.net](https://container-webapp.azurewebsites.net)

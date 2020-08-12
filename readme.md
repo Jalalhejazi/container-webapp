@@ -1,4 +1,4 @@
-## Automated-build between git-repo, docker-registry and Any Cloud 
+## DevOps using Docker and Azure
 
 <img   src="https://raw.githubusercontent.com/Jalalhejazi/container-webapp/master/public/ci-cd-workflow.png" alt="ci cd"/></img>
 

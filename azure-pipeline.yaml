@@ -3,8 +3,6 @@ pool:
 
 variables:
   imageName: 'container-webapp'
-  # dockerId: '' 
-  # dockerPassword: ''
 
 steps:
 - script: |

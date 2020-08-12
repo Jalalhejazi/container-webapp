@@ -1,10 +1,12 @@
-# dockerId and dockerPassword is coming from Azure Key-Vault Secret Store  
-
 pool:
   vmImage: 'Ubuntu 16.04'
 
 variables:
   imageName: 'container-webapp'
+  # dockerId: '' 
+  # dockerPassword: ''
+
+
 
 steps:
 - script: |

@@ -15,7 +15,6 @@ HTTP localhost:1234/
 
 ## 2. DevOps CI/CD 
 
-[![Build Status](https://dev.azure.com/superusers-kursus/devops/_apis/build/status/working-ok/container-webapp-on-github-to-dockerHub/container-webapp-on-github-to-dockerHub?branchName=master)](https://dev.azure.com/superusers-kursus/devops/_build/latest?definitionId=13&branchName=master)
 
 ```
 npm run deploy

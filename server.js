@@ -1,9 +1,3 @@
-/*
-	Jalal Hejazi 2018 
-
-*/
-
-
 const express = require('express')
 const config = require('./package.json')
 const fs     = require('fs')

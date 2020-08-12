@@ -15,6 +15,7 @@ HTTP localhost:1234/
 
 ## 2. DevOps CI/CD 
 
+[![Build Status](https://dev.azure.com/superusers-kursus/container-webapp/_apis/build/status/Jalalhejazi.container-webapp?branchName=master)](https://dev.azure.com/superusers-kursus/container-webapp/_build/latest?definitionId=117&branchName=master)
 
 ```
 npm run deploy

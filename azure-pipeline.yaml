@@ -6,8 +6,6 @@ variables:
   # dockerId: '' 
   # dockerPassword: ''
 
-
-
 steps:
 - script: |
     npm install --silent

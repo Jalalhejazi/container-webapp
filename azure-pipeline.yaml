@@ -1,0 +1,16 @@
+# dockerId and dockerPassword is coming from Azure Key-Vault Secret Store  
+
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+variables:
+  imageName: 'container-webapp'
+
+steps:
+- script: |
+    npm install --silent
+    docker build -f dockerfile -t $(dockerId)/$(imageName) .
+    docker login -u $(dockerId) -p $pswd
+    docker push $(dockerId)/$(imageName)
+  env:
+    pswd: $(dockerPassword)

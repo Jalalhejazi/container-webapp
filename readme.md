@@ -13,20 +13,19 @@ HTTP localhost:1234/
 ```
 
 
-## 2. DevOps CI/CD 
+## 2. DevOps Pipeline 
 
 [![Build Status](https://dev.azure.com/superusers-kursus/container-webapp/_apis/build/status/Jalalhejazi.container-webapp?branchName=master)](https://dev.azure.com/superusers-kursus/container-webapp/_build/latest?definitionId=117&branchName=master)
 
 ```
 npm run deploy
 
--> from localhost -> to Github (public) and Azure Registry (Private)
--> then, any docker Registry (auto build new docker image) 
--> then, deployment using webhooks
--> then, notification and Feedback 
+-> from localhost -> to Github (repo)
+-> then, dockerHub  
+-> then, Azure App Service for Container
 
 ```
 
-## 3. Multi-Staging / Multi-Production 
+## 3. Staging (Azure App Service)
 
 - [https://container-webapp.azurewebsites.net](https://container-webapp.azurewebsites.net)

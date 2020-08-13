@@ -1,3 +1,4 @@
+#  assign dockerId and dockerPassword from secret store or from a config env
 pool:
   vmImage: 'Ubuntu 16.04'
 

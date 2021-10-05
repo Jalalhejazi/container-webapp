@@ -28,4 +28,4 @@ npm run deploy
 
 ## 3. Staging (Azure App Service)
 
-- https://superusers-webapp-2021.azurewebsites.net/
+- https://todo.azurewebsites.net/
